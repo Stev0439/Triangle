@@ -29,7 +29,7 @@ def classify_triangle(a, b, c):
     b2 = b*b
     c2 = c*c
     Triangle = "The triangle (" + str(a) + ", " + str(b) + ", " + str(c) + ") is a "
-    if(a < 0 or b < 0 or c < 0):
+    if(a <= 0 or b <= 0 or c <= 0):
         return "Not a Triangle"
     if(a2 + b2 == c2 or a2 + c2 == b2 or c2 + b2 == a2):
         Triangle += "Right, "
